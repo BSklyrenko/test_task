@@ -1,0 +1,74 @@
+
+.main {
+  width: 60%;
+  margin: auto;
+}
+
+.main form div {
+  position: relative;
+  margin-top: 30px;
+}
+
+.main form > input {
+  margin: 20px 10px 0 0;
+}
+
+.wrong-field {
+  border: 1px solid red;
+}
+
+.err-msg {
+  position: absolute;
+  color: #DC143C;
+  bottom: -20px;
+  left: 5px;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(56, 40, 104, 0.5);
+}
+
+.popup #close-popup {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 32;
+  padding: 15px;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup > div:not([id='close-popup']) {
+  display: none;
+  position: relative;
+  width: 300px;
+  padding: 20px 5px;
+  margin: 100px auto 0;
+  background: white;
+}
+
+.popup .captcha input {
+  margin-top: 10px;
+}
+
+.success, .failed {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.success {
+  background: #008000;
+}
+
+.failed {
+  background: #ff0000;
+}
